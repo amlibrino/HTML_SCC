@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Formulaire Type</h1>
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend> Coordonnnées </legend>
+            <div>
+                <label for="nom"> Votre nom*: </label>
+                <input type="text" name="nom" id="nom" required>
+            </div>
+            <div>
+                <label for="prenom"> Votre prénom*: </label>
+                <input type="text" name="prénom" id="prenom" required>
+            </div>
+
+            <div><input type="checkbox" id="check" required> Je désire recevoir des informations.</div>
+            <div>
+                <select name="commande" size="1" id="select" required>
+                    <option value="" selected disabled> Selectionnez votre pays</option>
+                    <option value="Suisse"> Suisse </option>
+                    <option value="France"> France </option>
+                    <option value="Belgique"> Belgique</option>
+                    <option value="Autres"> Autres</option>
+                </select>
+            </div>
+            <div><label for="sexe"> Sexe* :</label><br>
+                <input type="radio" name="sexe" id="sexe" required value="Féminin"> Féminin
+                <input type="radio" name="sexe" id="sexe" required value="Masculin"> Masculin </div>
+        </fieldset>
+
+
+        <fieldset>
+            <h4>Domaine d'activité</h4>
+            <p>Vous pouvez en choisir plus que un</p>
+            <div>
+                <input type="checkbox" name="Pedagogie" id="Pedagogie" required value="Pedagogie"> Pedagogie
+
+                <input type="checkbox" name="Informatique" id="Informatique" required value="Informatique"> Informatique
+                <input type="checkbox" name="Psycologie" id="Psycologie" required value="Psycologie"> Psycologie
+                <input type="checkbox" name="Autres" id="Autres" required value="Autres"> Autres
+
+            </div>
+
+            <h5>commentaire</h5>
+
+
+            <div><label for="area">
+                    Si vous le voulez, vous pouvez decrire vos activités ou interets* : </label><br>
+                     <textarea name=""id="area" required></textarea>
+            </div>
+        </fieldset>
+       <br>
+        <input type="submit" value="Enregistrer les données" id="envoyer">
+        <input type="reset" value="Effacer les données">
+        
+    </form>
+
+</body>
+
+</html>
